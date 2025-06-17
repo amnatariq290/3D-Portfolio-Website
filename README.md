@@ -2,7 +2,7 @@
 
 Welcome to my personal 3D interactive developer portfolio built with React, Three.js, and Tailwind CSS. This site showcases my skills, projects, and passion for building clean and accessible user experiences — powered by Web, AI, and embedded systems.
 
-🔗 **Live Demo:** [amna-portfolio.netlify.app](https://amna-portfolio.netlify.app)
+🔗 **Live Demo:** https://68519e7163504624f04f438a--voluble-tiramisu-1ca743.netlify.app/
 
 ---
 
