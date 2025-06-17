@@ -51,10 +51,12 @@ npm install
 # Run the development server
 npm run dev
 
-👩‍💻 About Me
+---
+## 👩‍💻 About Me
+
 I'm Amna Tariq, a Computer Engineering student passionate about frontend development, accessibility, and AI-based tools. I love building clean, interactive experiences and contributing to real-world projects.
 
-📫 Reach me on:
+## 📫 Reach me on:
 
 GitHub: amnatariq290
 
