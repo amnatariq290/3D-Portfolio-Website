@@ -1,228 +1,115 @@
-import { meta, shopify, starbucks, tesla } from "../assets/images";
+
 import {
-    car,
-    contact,
-    css,
-    estate,
-    express,
-    git,
-    github,
     html,
+    css,
     javascript,
-    linkedin,
-    mongodb,
-    motion,
-    mui,
-    nextjs,
-    nodejs,
-    pricewise,
     react,
-    redux,
-    sass,
-    snapgram,
-    summiz,
     tailwindcss,
-    threads,
-    typescript
-} from "../assets/icons";
+    github,
+    python,
+    java,
+    aws,
+    voice,
+    contact,
+    linkedin,
+    resumeanalyzer,
+    accessibility,
+    reactportfolio,
+   
+  } from "../assets/icons"; // Make sure these icons exist or are added
+  
+  export const skills = [
+    { imageUrl: html, name: "HTML", type: "Frontend" },
+    { imageUrl: css, name: "CSS", type: "Frontend" },
+    { imageUrl: javascript, name: "JavaScript", type: "Frontend" },
+    { imageUrl: react, name: "React", type: "Frontend" },
+    { imageUrl: tailwindcss, name: "Tailwind CSS", type: "Frontend" },
+    { imageUrl: python, name: "Python", type: "Programming" },
+    { imageUrl: java, name: "Java", type: "Programming" },
+    { imageUrl: aws, name: "AWS", type: "Cloud" },
+    { imageUrl: github, name: "GitHub", type: "Version Control" },
+  ];
+  
+  export const experiences = [
+    {
+      title: "Freelance Web Developer",
+      company_name: "Self-Employed",
+      icon: react,
+      iconBg: "#D9EAD3",
+      date: "Jan 2024 - Present",
+      points: [
+        "Developed responsive websites using Webflow and React.",
+        "Built accessibility and AI-powered tools with Python & Streamlit.",
+        "Worked with clients on Web projects via Fiverr.",
+      ],
+    },
+    {
+      title: "Student Projects",
+      company_name: "UET Taxila",
+      icon: react,
+      iconBg: "#F4CCCC",
+      date: "Aug 2023 - Present",
+      points: [
+        "Built Smart Resume Analyzer using NLP & ML.",
+        "Created 3D React Portfolio and Accessibility Checker.",
+        "Worked with ATmega32 for embedded systems and robotics.",
+      ],
+    },
+  ];
+  
+  export const socialLinks = [
+    {
+      name: "Contact",
+      iconUrl: contact,
+      link: "/contact",
+    },
+    {
+      name: "GitHub",
+      iconUrl: github,
+      link: "https://github.com/amnatariq290",
+    },
+    {
+      name: "LinkedIn",
+      iconUrl: linkedin,
+      link: "https://www.linkedin.com/in/amna-tariq-201253345/",
+    },
+  ];
+  
+  export const projects = [
+    {
+      iconUrl: resumeanalyzer,
+      theme: "btn-back-blue",
+      name: "Smart Resume Analyzer",
+      description:
+        "A Streamlit app that analyzes uploaded resumes and recommends jobs or courses using NLP and ML.",
+      link: "https://smart-ai-resume-analyzer-and-job-recommender-fazmmgt5gzjjt6q65.streamlit.app/",
+    },
+    {
+      iconUrl: accessibility,
+      theme: "btn-back-green",
+      name: "Accessibility Analyzer",
+      description:
+        "Python + Selenium based web tool to evaluate accessibility of websites based on WCAG standards.",
+      link: "https://github.com/amnatariq290/Accessibility-Analyzer",
+    },
+    {
+      iconUrl: reactportfolio,
+      theme: "btn-back-yellow",
+      name: "3D Interactive Portfolio",
+      description:
+        "A visually rich interactive 3D portfolio made using React Three Fiber, showcasing my projects and skills.",
+      link: "https://amna-portfolio.netlify.app/",
+    },
+    {
+  iconUrl: voice, // You can change this to a mic icon or anything else if you have one
+  theme: "btn-back-purple",
+  name: "Java Voice Assistant",
+  description:
+    "A desktop application built using Java that responds to voice commands to perform tasks like opening apps, telling time, and more.",
+  link: "https://github.com/amnatariq290/Java-Voice-Assistant", // Replace with actual GitHub if available
+},
 
-export const skills = [
-    {
-        imageUrl: css,
-        name: "CSS",
-        type: "Frontend",
-    },
-    {
-        imageUrl: express,
-        name: "Express",
-        type: "Backend",
-    },
-    {
-        imageUrl: git,
-        name: "Git",
-        type: "Version Control",
-    },
-    {
-        imageUrl: github,
-        name: "GitHub",
-        type: "Version Control",
-    },
-    {
-        imageUrl: html,
-        name: "HTML",
-        type: "Frontend",
-    },
-    {
-        imageUrl: javascript,
-        name: "JavaScript",
-        type: "Frontend",
-    },
-    {
-        imageUrl: mongodb,
-        name: "MongoDB",
-        type: "Database",
-    },
-    {
-        imageUrl: motion,
-        name: "Motion",
-        type: "Animation",
-    },
-    {
-        imageUrl: mui,
-        name: "Material-UI",
-        type: "Frontend",
-    },
-    {
-        imageUrl: nextjs,
-        name: "Next.js",
-        type: "Frontend",
-    },
-    {
-        imageUrl: nodejs,
-        name: "Node.js",
-        type: "Backend",
-    },
-    {
-        imageUrl: react,
-        name: "React",
-        type: "Frontend",
-    },
-    {
-        imageUrl: redux,
-        name: "Redux",
-        type: "State Management",
-    },
-    {
-        imageUrl: sass,
-        name: "Sass",
-        type: "Frontend",
-    },
-    {
-        imageUrl: tailwindcss,
-        name: "Tailwind CSS",
-        type: "Frontend",
-    },
-    {
-        imageUrl: typescript,
-        name: "TypeScript",
-        type: "Frontend",
-    }
-];
-
-export const experiences = [
-    {
-        title: "React.js Developer",
-        company_name: "Starbucks",
-        icon: starbucks,
-        iconBg: "#accbe1",
-        date: "March 2020 - April 2021",
-        points: [
-            "Developing and maintaining web applications using React.js and other related technologies.",
-            "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-            "Implementing responsive design and ensuring cross-browser compatibility.",
-            "Participating in code reviews and providing constructive feedback to other developers.",
-        ],
-    },
-    {
-        title: "React Native Developer",
-        company_name: "Tesla",
-        icon: tesla,
-        iconBg: "#fbc3bc",
-        date: "Jan 2021 - Feb 2022",
-        points: [
-            "Developing and maintaining web applications using React.js and other related technologies.",
-            "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-            "Implementing responsive design and ensuring cross-browser compatibility.",
-            "Participating in code reviews and providing constructive feedback to other developers.",
-        ],
-    },
-    {
-        title: "Web Developer",
-        company_name: "Shopify",
-        icon: shopify,
-        iconBg: "#b7e4c7",
-        date: "Jan 2022 - Jan 2023",
-        points: [
-            "Developing and maintaining web applications using React.js and other related technologies.",
-            "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-            "Implementing responsive design and ensuring cross-browser compatibility.",
-            "Participating in code reviews and providing constructive feedback to other developers.",
-        ],
-    },
-    {
-        title: "Full stack Developer",
-        company_name: "Meta",
-        icon: meta,
-        iconBg: "#a2d2ff",
-        date: "Jan 2023 - Present",
-        points: [
-            "Developing and maintaining web applications using React.js and other related technologies.",
-            "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-            "Implementing responsive design and ensuring cross-browser compatibility.",
-            "Participating in code reviews and providing constructive feedback to other developers.",
-        ],
-    },
-];
-
-export const socialLinks = [
-    {
-        name: 'Contact',
-        iconUrl: contact,
-        link: '/contact',
-    },
-    {
-        name: 'GitHub',
-        iconUrl: github,
-        link: 'https://github.com/YourGitHubUsername',
-    },
-    {
-        name: 'LinkedIn',
-        iconUrl: linkedin,
-        link: 'https://www.linkedin.com/in/YourLinkedInUsername',
-    }
-];
-
-export const projects = [
-    {
-        iconUrl: pricewise,
-        theme: 'btn-back-red',
-        name: 'Amazon Price Tracker',
-        description: 'Developed a web application that tracks and notifies users of price changes for products on Amazon, helping users find the best deals.',
-        link: 'https://github.com/adrianhajdin/pricewise',
-    },
-    {
-        iconUrl: threads,
-        theme: 'btn-back-green',
-        name: 'Full Stack Threads Clone',
-        description: 'Created a full-stack replica of the popular discussion platform "Threads," enabling users to post and engage in threaded conversations.',
-        link: 'https://github.com/adrianhajdin/threads',
-    },
-    {
-        iconUrl: car,
-        theme: 'btn-back-blue',
-        name: 'Car Finding App',
-        description: 'Designed and built a mobile app for finding and comparing cars on the market, streamlining the car-buying process.',
-        link: 'https://github.com/adrianhajdin/project_next13_car_showcase',
-    },
-    {
-        iconUrl: snapgram,
-        theme: 'btn-back-pink',
-        name: 'Full Stack Instagram Clone',
-        description: 'Built a complete clone of Instagram, allowing users to share photos and connect with friends in a familiar social media environment.',
-        link: 'https://github.com/adrianhajdin/social_media_app',
-    },
-    {
-        iconUrl: estate,
-        theme: 'btn-back-black',
-        name: 'Real-Estate Application',
-        description: 'Developed a web application for real estate listings, facilitating property searches and connecting buyers with sellers.',
-        link: 'https://github.com/adrianhajdin/projects_realestate',
-    },
-    {
-        iconUrl: summiz,
-        theme: 'btn-back-yellow',
-        name: 'AI Summarizer Application',
-        description: 'App that leverages AI to automatically generate concise & informative summaries from lengthy text content, or blogs.',
-        link: 'https://github.com/adrianhajdin/project_ai_summarizer',
-    }
-];
+  ];
+  
+  
+  
