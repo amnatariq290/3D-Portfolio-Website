@@ -98,7 +98,7 @@ import {
       name: "3D Interactive Portfolio",
       description:
         "A visually rich interactive 3D portfolio made using React Three Fiber, showcasing my projects and skills.",
-      link: "https://amna-portfolio.netlify.app/",
+      link: "https://gentle-sunflower-d0a7b9.netlify.app/",
     },
     {
   iconUrl: voice, // You can change this to a mic icon or anything else if you have one
