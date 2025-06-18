@@ -90,7 +90,7 @@ import {
       name: "Accessibility Analyzer",
       description:
         "Python + Selenium based web tool to evaluate accessibility of websites based on WCAG standards.",
-      link: "https://github.com/amnatariq290/Accessibility-Analyzer",
+      link: "https://accessibility-analyzer-gshlrpnmappekraaijaqhe7.streamlit.app/",
     },
     {
       iconUrl: reactportfolio,
